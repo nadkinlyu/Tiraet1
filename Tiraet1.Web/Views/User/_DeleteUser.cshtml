@@ -1,0 +1,11 @@
+@using RPNL.Net.Utilities.WebUtils
+@using Tiraet1.Web.Models  
+  
+<form asp-action="_DeleteUser" role="form">  
+    @Html.Partial("_ModalHeader", new BootstrapModel.ModalHeader { Heading = "Delete User" })  
+  
+    <div class="modal-body form-horizontal">  
+        Are you want to delete @Model?  
+    </div>  
+    @Html.Partial("_ModalFooter", new BootstrapModel.ModalFooter { SubmitButtonText = "Delete" })  
+</form>
